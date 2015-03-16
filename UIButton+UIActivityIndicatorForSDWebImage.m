@@ -27,26 +27,26 @@
     [self setImageWithURL:url forState:state placeholderImage:placeholder options:options completed:nil usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     [self setImageWithURL:url forState:state placeholderImage:nil options:0 completed:completedBlock usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     [self setImageWithURL:url forState:state placeholderImage:placeholder options:0 completed:completedBlock usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     
     [self addActivityIndicatorWithStyle:activityStyle];
     
     __weak typeof(self) weakSelf = self;
-    [self setImageWithURL:url
+    [self sd_setImageWithURL:url
                  forState:state
          placeholderImage:placeholder
                   options:options
-                completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageUrl) {
                     if (completedBlock) {
-                        completedBlock(image, error, cacheType);
+                        completedBlock(image, error, cacheType, imageUrl);
                     }
                     [weakSelf removeActivityIndicator];
                 }
@@ -65,26 +65,26 @@
     [self setImageWithURL:url forState:state placeholderImage:placeholder options:options completed:nil usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     [self setImageWithURL:url forState:state placeholderImage:nil options:0 completed:completedBlock usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     [self setImageWithURL:url forState:state placeholderImage:placeholder options:0 completed:completedBlock usingActivityIndicatorStyle:activityStyle];
 }
 
-- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
+- (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletionBlock)completedBlock usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle {
     
     [self addActivityIndicatorWithStyle:activityStyle];
     
     __weak typeof(self) weakSelf = self;
-    [self setBackgroundImageWithURL:url
+    [self sd_setBackgroundImageWithURL:url
                            forState:state
                    placeholderImage:placeholder
                             options:options
-                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageUrl) {
                               if (completedBlock) {
-                                  completedBlock(image, error, cacheType);
+                                  completedBlock(image, error, cacheType, imageUrl);
                               }
                               [weakSelf removeActivityIndicator];
                           }
