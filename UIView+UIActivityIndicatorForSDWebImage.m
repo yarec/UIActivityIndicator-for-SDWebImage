@@ -30,10 +30,9 @@ static char TAG_ACTIVITY_INDICATOR;
         
         self.activityIndicator.autoresizingMask = UIViewAutoresizingNone;
         
-        [self updateActivityIndicatorFrame];
-        
         dispatch_async(dispatch_get_main_queue(), ^(void) {
             [self addSubview:self.activityIndicator];
+            [self updateActivityIndicatorPosition];
         });
     }
     
@@ -43,12 +42,9 @@ static char TAG_ACTIVITY_INDICATOR;
     
 }
 
--(void)updateActivityIndicatorFrame {
+-(void)updateActivityIndicatorPosition {
     if (self.activityIndicator) {
-        CGRect activityIndicatorBounds = self.activityIndicator.bounds;
-        float x = (self.frame.size.width - activityIndicatorBounds.size.width) / 2.0;
-        float y = (self.frame.size.height - activityIndicatorBounds.size.height) / 2.0;
-        self.activityIndicator.frame = CGRectMake(x, y, activityIndicatorBounds.size.width, activityIndicatorBounds.size.height);
+        self.activityIndicator.center = CGPointMake((CGRectGetWidth(self.frame) / 2.0f), (CGRectGetHeight(self.frame) / 2.0));
     }
 }
 
@@ -57,10 +53,6 @@ static char TAG_ACTIVITY_INDICATOR;
         [self.activityIndicator removeFromSuperview];
         self.activityIndicator = nil;
     }
-}
-
--(void)layoutSubviews {
-    [self updateActivityIndicatorFrame];
 }
 
 @end
