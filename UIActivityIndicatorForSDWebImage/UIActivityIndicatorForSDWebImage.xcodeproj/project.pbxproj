@@ -10,11 +10,11 @@
 		73F825251B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F825241B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F8252B1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F8251F1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.framework */; };
 		73F825321B0589A800ACFBC9 /* UIActivityIndicatorForSDWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F825311B0589A800ACFBC9 /* UIActivityIndicatorForSDWebImageTests.m */; };
-		73F825411B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253B1B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.h */; };
+		73F825411B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253B1B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F825421B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F8253C1B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.m */; };
-		73F825431B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253D1B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h */; };
+		73F825431B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253D1B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F825441B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F8253E1B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
-		73F825451B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253F1B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h */; };
+		73F825451B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253F1B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F825461B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F825401B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.m */; };
 		73F8258C1B059BC900ACFBC9 /* SDWebImg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F8258B1B059BC900ACFBC9 /* SDWebImg.framework */; };
 /* End PBXBuildFile section */
@@ -131,8 +131,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F825431B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */,
 				73F825251B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h in Headers */,
+				73F825431B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */,
 				73F825451B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h in Headers */,
 				73F825411B0589B600ACFBC9 /* UIButton+UIActivityIndicatorForSDWebImage.h in Headers */,
 			);
