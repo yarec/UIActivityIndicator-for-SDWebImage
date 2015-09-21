@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7318B7FC1BAFF92D00D20905 /* SDWebImg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7318B7FB1BAFF92D00D20905 /* SDWebImg.framework */; };
 		73F825251B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F825241B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F8252B1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F8251F1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.framework */; };
 		73F825321B0589A800ACFBC9 /* UIActivityIndicatorForSDWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F825311B0589A800ACFBC9 /* UIActivityIndicatorForSDWebImageTests.m */; };
@@ -16,7 +17,6 @@
 		73F825441B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F8253E1B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
 		73F825451B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F8253F1B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F825461B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F825401B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.m */; };
-		73F8258C1B059BC900ACFBC9 /* SDWebImg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F8258B1B059BC900ACFBC9 /* SDWebImg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7318B7FB1BAFF92D00D20905 /* SDWebImg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImg.framework; path = ../Carthage/Build/iOS/SDWebImg.framework; sourceTree = "<group>"; };
 		73F8251F1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIActivityIndicatorForSDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F825231B0589A700ACFBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73F825241B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIActivityIndicatorForSDWebImage.h; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		73F8253E1B0589B600ACFBC9 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UIActivityIndicatorForSDWebImage.m"; path = "../../UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
 		73F8253F1B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UIActivityIndicatorForSDWebImage.h"; path = "../../UIView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
 		73F825401B0589B600ACFBC9 /* UIView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UIActivityIndicatorForSDWebImage.m"; path = "../../UIView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
-		73F8258B1B059BC900ACFBC9 /* SDWebImg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImg.framework; path = ../Carthage/Build/iOS/SDWebImg.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F8258C1B059BC900ACFBC9 /* SDWebImg.framework in Frameworks */,
+				7318B7FC1BAFF92D00D20905 /* SDWebImg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		73F825151B0589A700ACFBC9 = {
 			isa = PBXGroup;
 			children = (
-				73F8258B1B059BC900ACFBC9 /* SDWebImg.framework */,
+				7318B7FB1BAFF92D00D20905 /* SDWebImg.framework */,
 				73F825211B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImage */,
 				73F8252E1B0589A700ACFBC9 /* UIActivityIndicatorForSDWebImageTests */,
 				73F825201B0589A700ACFBC9 /* Products */,
@@ -438,6 +438,7 @@
 				73F825371B0589A800ACFBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73F825381B0589A800ACFBC9 /* Build configuration list for PBXNativeTarget "UIActivityIndicatorForSDWebImageTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +447,7 @@
 				73F8253A1B0589A800ACFBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
